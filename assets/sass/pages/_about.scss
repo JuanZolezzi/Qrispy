@@ -3,37 +3,33 @@
   width: 100%;
   overflow: hidden;
   background-color: $fondo;
-}
-
-.wrapper-row {
-  width: 100%;
-  padding: 20px 100px;
-}
-
-.content {
-  width: 60%;
-  float: left;
-  margin-left: 50px;
-  text-align: center;
-}
-
-.content .content-title {
-  font-size: 90px;
-  letter-spacing: 3.5px;
-  margin-top: 25px;
-  color: $naranja-claro;
-}
-
-.content .content-subtitle {
-  font-size: 40px;
-  color: $negro-claro;
-  margin-top: 25px;
-}
-
-.content .content-text {
-  font-size: 20px;
-  margin-top: 10px;
-  line-height: 1.5;
+  &-row {
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    .content {
+      width: 100%;
+      float: left; 
+      text-align: center;
+      &-title {
+        font-size: 90px;
+        letter-spacing: 3.5px;
+        margin-top: 25px;
+        color: $naranja-claro;
+      }
+      &-subtitle {
+        font-size: 40px;
+        color: $negro-claro;
+        margin-top: 25px;
+      }
+      &-text {
+        font-size: 20px;
+        margin-top: 10px;
+        line-height: 1.5;
+      }
+    }
+  }
 }
 
 .cards-flex {
@@ -41,18 +37,21 @@
   justify-content: space-evenly;
   background-color: $fondo;
   padding-bottom: 70px;
-}
-
-.btn-about {
-  background-color: $naranja;
-  border-radius: 0;
-  border-color: $naranja;
-  color: $blanco;
-}
-
-.btn-about:hover {
-  background-color: $negro-claro;
-  color: $blanco;
+  padding-top: 30px;
+  .card {
+    .card-body {
+      .btn-about {
+        background-color: $naranja;
+        border-radius: 0;
+        border-color: $naranja;
+        color: $blanco;
+        &:hover {
+          background-color: $negro-claro;
+          color: $blanco;
+        }
+      }
+    }
+  }
 }
 
 .about-last {
@@ -60,42 +59,39 @@
   width: 100%;
   padding: 0 100px;
   text-align: center;
+  &-title {
+    color: $naranja-claro;
+    font-size: 40px;
+    letter-spacing: 3.5px;
+  }
+  &-text {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  &-img {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    height: 50%;
+    width: 90%;
+  }
+  &-subtitle {
+    margin-top: 25px;
+  }
 }
 
-.about-last-title {
-  color: $naranja-claro;
-  font-size: 40px;
-  letter-spacing: 3.5px;
-}
-
-.about-last-text {
-  font-size: 20px;
-  margin-top: 10px;
-  line-height: 1.5;
-}
-
-.about-last-img {
-  margin-bottom: 30px;
-  margin-top: 10px;
-  height: 50%;
-  width: 90%;
-}
-
-.about-last-subtitle {
-  margin-top: 25px;
-}
 
 @media (max-width: 600px) {
-  .content .content-title {
-    font-size: 40px;
-  }
-
-  .content .content-subtitle {
-    font-size: 25px;
-  }
-
-  .content .content-text {
-    display: none;
+  .content {
+    &-title {
+      font-size: 40px !important;
+    }
+    &-subtitle {
+      font-size: 25px !important;
+    }
+    &-text {
+      display: none;
+    }
   }
 }
 
@@ -112,10 +108,9 @@
     padding-bottom: 70px;
     flex-direction: column;
     align-items: center;
-  }
-
-  .card {
-    margin-bottom: 30px;
+    .card {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -124,20 +119,17 @@
     width: 100%;
     float: none;
     margin-left: 0px;
-  }
-
-  .content .content-title {
-    font-size: 60px;
-    letter-spacing: 2px;
-    margin-top: 30px;
-  }
-
-  .content .content-subtitle {
-    font-size: 30px;
-  }
-
-  .content .content-text {
-    font-size: 18px;
+    &--title {
+      font-size: 60px;
+      letter-spacing: 2px;
+      margin-top: 30px;
+    }
+    &-subtitle {
+      font-size: 30px;
+    }
+    &-text {
+      font-size: 18px;
+    }
   }
 
   .about-last {

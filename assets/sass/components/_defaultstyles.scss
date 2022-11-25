@@ -1,0 +1,71 @@
+body {
+  font-family: "Spline Sans", sans-serif;
+  color: $gris;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: $negro-claro;
+}
+
+a {
+  color: $negro-claro;
+  text-decoration: none;
+  transition: all 0.4s;
+  &:hover {
+    color: $naranja;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.shadow-on-hover {
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn {
+  border-radius: 0;
+  padding: 14px 38px;
+  &-brand {
+    color: $blanco;
+    font-weight: 500;
+    border-color: $naranja;
+    background-color: $naranja;
+    &:hover {
+      border-color: $naranja-claro;
+      background-color: $naranja-claro;
+      color: $blanco;
+    }
+  }
+}
+
+.bg-cover {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+  p {
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+  }
+}

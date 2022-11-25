@@ -1,11 +1,11 @@
 /* Navbar */
-.navbar-nav .nav-link.active {
-  color: #f58d17;
-}
-
 .navbar {
   font-family: "Spline Sans", sans-serif !important;
   color: #777 !important;
   line-height: 1.7 !important;
   letter-spacing: normal !important;
+  .navbar-nav {
+    .nav-link.active{
+      color: #f58d17;}
+  }
 }
