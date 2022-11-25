@@ -131,6 +131,9 @@ section {
   margin: 16px auto 0 auto; }
 
 /* Menu */
+#menu {
+  padding-top: 20px; }
+
 #menu .nav-pills .nav-link {
   background-color: #fff;
   margin-left: 8px;
