@@ -1,0 +1,135 @@
+/* start menu */
+.menu-css {
+  font-size: 16px;
+  line-height: 1.52;
+  color: #717f86;
+  font-weight: 400;
+  overflow-x: hidden;
+  background-color: $fondo;
+}
+
+.section-padding {
+  padding: 60px 0px;
+}
+
+.marb-35 {
+  margin-bottom: 35px;
+}
+
+.header-h {
+  font-size: 35px;
+  color: $naranja;
+  font-weight: 300;
+}
+
+.header-p {
+  color: #9699a6;
+  font-size: 16px;
+}
+
+#menu-flters ul li {
+  display: inline-block;
+  color: $blanco;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#menu-flters ul li a {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #565656;
+  border-radius: 0px;
+  border: 1px solid #bbbbbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu-flters ul li a.active,
+#menu-flters ul li a:hover {
+  background: $naranja;
+  color: $blanco;
+  border: 1px solid #ffb03b;
+}
+
+.menu-restaurant {
+  width: 50%;
+  float: left;
+  padding: 40px;
+  position: relative;
+}
+
+.menu-restaurant .menu-title {
+  float: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $naranja;
+}
+
+.menu-title:hover {
+  background-color: $naranja;
+  color: $blanco;
+}
+
+.menu-restaurant .menu-line {
+  position: absolute;
+  bottom: 6px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.menu-restaurant .menu-price {
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-restaurant .menu-subtitle {
+  display: block;
+  float: left;
+  color: #b1b1b1;
+  font-size: 1.2rem;
+}
+
+.menu-restaurant span.clearfix {
+  position: relative;
+  display: block;
+}
+
+#menu-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .menu-css {
+    font-size: 11px;
+  }
+
+  .menu-subtitle {
+    font-size: 11px !important;
+  }
+
+  .menu-restaurant {
+    width: 100%;
+  }
+
+  .menu-restaurant span.clearfix {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-restaurant span.clearfix {
+    display: block;
+  }
+
+  .menu-restaurant {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* end menu */
